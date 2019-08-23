@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2019%2F08%2F22%2Ftest%2F</url>
+    <content type="text"><![CDATA[hello world]]></content>
+      <categories>
+        <category>testCate</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+</search>

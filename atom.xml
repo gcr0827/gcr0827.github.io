@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>gcr&#39;s blog</title>
+  
+  <subtitle>PHP | Mysql</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-08-23T09:18:45.308Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>gcr</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/08/22/test/"/>
+    <id>http://yoursite.com/2019/08/22/test/</id>
+    <published>2019-08-22T09:27:31.000Z</published>
+    <updated>2019-08-23T09:18:45.308Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>hello world</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;code&gt;hello world&lt;/code&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="testCate" scheme="http://yoursite.com/categories/testCate/"/>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+  </entry>
+  
+</feed>
