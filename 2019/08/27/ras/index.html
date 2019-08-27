@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="算法•排序,PHP,">
 
 
 
@@ -84,16 +84,18 @@
 
 
 
-<meta name="description" content="菜鸟随笔录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="gcr&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。 1.why     为什么会去了解学习算法(面试需要🙄‍)，当然是因为代码的实现简短，应用较常见了 2.what   冒泡排序 算法描述 比较相邻的元素。如果第一个比第二个大，就交换它们两个 对每一对相邻元素作同">
+<meta name="keywords" content="算法•排序,PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本排序算法">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/ras/index.html">
 <meta property="og:site_name" content="gcr&#39;s blog">
-<meta property="og:description" content="菜鸟随笔录">
+<meta property="og:description" content="常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。 1.why     为什么会去了解学习算法(面试需要🙄‍)，当然是因为代码的实现简短，应用较常见了 2.what   冒泡排序 算法描述 比较相邻的元素。如果第一个比第二个大，就交换它们两个 对每一对相邻元素作同">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-27T10:33:30.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gcr&#39;s blog">
-<meta name="twitter:description" content="菜鸟随笔录">
+<meta name="twitter:title" content="基本排序算法">
+<meta name="twitter:description" content="常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。 1.why     为什么会去了解学习算法(面试需要🙄‍)，当然是因为代码的实现简短，应用较常见了 2.what   冒泡排序 算法描述 比较相邻的元素。如果第一个比第二个大，就交换它们两个 对每一对相邻元素作同">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/27/ras/">
 
 
 
 
 
-  <title>gcr's blog</title>
+  <title>基本排序算法 | gcr's blog</title>
   
 
 
@@ -148,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,9 +275,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -306,9 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/27/ras/" itemprop="url">基本排序算法</a></h1>
+          <h1 class="post-title" itemprop="name headline">基本排序算法</h1>
         
 
         <div class="post-meta">
@@ -411,18 +410,25 @@
       
 
       
-        
-          
-          常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/27/ras/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。</p>
+<p><strong>1.why</strong> <br><br>    为什么会去了解学习算法(面试需要🙄‍)，当然是因为代码的实现简短，应用较常见了</p>
+<p><strong>2.what</strong> <br></p>
+<ul>
+<li>冒泡排序<ul>
+<li>算法描述<ul>
+<li>比较相邻的元素。如果第一个比第二个大，就交换它们两个</li>
+<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对，这样在最后的元素会是最大的数</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个(未排序的数字中的最后一个)</li>
+<li>重复步骤1~3，直到排序完成</li>
+</ul>
+</li>
+<li>代码实现<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//冒泡排序</span></span><br><span class="line">$arr = [<span class="number">3</span>, <span class="number">38</span>, <span class="number">44</span>, <span class="number">5</span>, <span class="number">47</span>, <span class="number">15</span>, <span class="number">36</span>, <span class="number">26</span>, <span class="number">27</span>, <span class="number">2</span>, <span class="number">46</span>, <span class="number">4</span>, <span class="number">19</span>, <span class="number">50</span>, <span class="number">48</span>];</span><br><span class="line"></span><br><span class="line">$len = count($arr);</span><br><span class="line"><span class="comment">//需要冒泡的轮数</span></span><br><span class="line"><span class="keyword">for</span> ($i = <span class="number">1</span>; $i &lt; $len; $i++) &#123;</span><br><span class="line">    <span class="comment">// 每轮需要比较的次数</span></span><br><span class="line">    <span class="keyword">for</span> ($j = <span class="number">0</span>; $j &lt; $len - $i; $j++) &#123;</span><br><span class="line">        <span class="comment">// 大的数，交换位置，往后挪</span></span><br><span class="line">        <span class="keyword">if</span> ($arr[$j] &gt; $arr[$j + <span class="number">1</span>]) &#123;</span><br><span class="line">            <span class="keyword">list</span>($arr[$j], $arr[$j + <span class="number">1</span>]) = [$arr[$j + <span class="number">1</span>], $arr[$j]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">print_r($arr);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
@@ -437,194 +443,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/22/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gcr">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="gcr's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/22/test/" itemprop="url">test</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T17:27:31+08:00">
-                2019-08-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/testCate/" itemprop="url" rel="index">
-                    <span itemprop="name">testCate</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/算法•排序/" rel="tag"><i class="fa fa-tag"></i> 算法•排序</a>
           
-
+            <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          hello world
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/22/test/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/22/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -634,10 +484,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -645,6 +496,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -878,6 +733,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

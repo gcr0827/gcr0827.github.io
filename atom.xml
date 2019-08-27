@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-23T09:18:45.308Z</updated>
+  <updated>2019-08-27T10:33:30.295Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基本排序算法</title>
+    <link href="http://yoursite.com/2019/08/27/ras/"/>
+    <id>http://yoursite.com/2019/08/27/ras/</id>
+    <published>2019-08-27T03:54:13.000Z</published>
+    <updated>2019-08-27T10:33:30.295Z</updated>
+    
+    <content type="html"><![CDATA[<p>常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。</p><p><strong>1.why</strong> <br><br>    为什么会去了解学习算法(面试需要🙄‍)，当然是因为代码的实现简短，应用较常见了</p><p><strong>2.what</strong> <br></p><ul><li>冒泡排序<ul><li>算法描述<ul><li>比较相邻的元素。如果第一个比第二个大，就交换它们两个</li><li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对，这样在最后的元素会是最大的数</li><li>针对所有的元素重复以上的步骤，除了最后一个(未排序的数字中的最后一个)</li><li>重复步骤1~3，直到排序完成</li></ul></li><li>代码实现<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//冒泡排序</span></span><br><span class="line">$arr = [<span class="number">3</span>, <span class="number">38</span>, <span class="number">44</span>, <span class="number">5</span>, <span class="number">47</span>, <span class="number">15</span>, <span class="number">36</span>, <span class="number">26</span>, <span class="number">27</span>, <span class="number">2</span>, <span class="number">46</span>, <span class="number">4</span>, <span class="number">19</span>, <span class="number">50</span>, <span class="number">48</span>];</span><br><span class="line"></span><br><span class="line">$len = count($arr);</span><br><span class="line"><span class="comment">//需要冒泡的轮数</span></span><br><span class="line"><span class="keyword">for</span> ($i = <span class="number">1</span>; $i &lt; $len; $i++) &#123;</span><br><span class="line">    <span class="comment">// 每轮需要比较的次数</span></span><br><span class="line">    <span class="keyword">for</span> ($j = <span class="number">0</span>; $j &lt; $len - $i; $j++) &#123;</span><br><span class="line">        <span class="comment">// 大的数，交换位置，往后挪</span></span><br><span class="line">        <span class="keyword">if</span> ($arr[$j] &gt; $arr[$j + <span class="number">1</span>]) &#123;</span><br><span class="line">            <span class="keyword">list</span>($arr[$j], $arr[$j + <span class="number">1</span>]) = [$arr[$j + <span class="number">1</span>], $arr[$j]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">print_r($arr);</span><br></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;常见的排序算法有冒泡、快速、选择和插入排序(包含但不限于，这个不做阐述)，其中以冒泡排序我们最为了解，今天，我们来了解下其他三种。本文会以php代码来实现，动图辅助来帮助我们快速掌握。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.why&lt;/strong&gt; &lt;br&gt;&lt;br&gt;    为什
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法•排序" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95%E2%80%A2%E6%8E%92%E5%BA%8F/"/>
+    
+      <category term="PHP" scheme="http://yoursite.com/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
     <link href="http://yoursite.com/2019/08/22/test/"/>
     <id>http://yoursite.com/2019/08/22/test/</id>
     <published>2019-08-22T09:27:31.000Z</published>
-    <updated>2019-08-23T09:18:45.308Z</updated>
+    <updated>2019-08-27T03:58:54.376Z</updated>
     
     <content type="html"><![CDATA[<p><code>hello world</code></p>]]></content>
     
